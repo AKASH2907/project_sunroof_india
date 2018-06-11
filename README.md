@@ -15,3 +15,13 @@ Contour Area localization and then applied threshold to detect rooftop. It was a
 ### 3) Watershed Segmentation: 
 Segmentation on the images from maps to count the number of buildings and to plot rooftop area of each building present in the image. It failed in the case of the densely populated area.
 
+## Gabor Filter
+* Gabor Filter analyses whether there is any specific frequency content in the image in specific directions in a localized region around the point or region of analysis.
+* Gaussian Mixture Model is a probabilistic model that assumes all the data points are generated from a mixture of a finite number of the Gaussian distribution.
+* Gabor filter enhances one region relative to other depending on the frequency and theta values. After applying Gabor filter, two Gaussian Mixture models were fit in the histogram of the grayscale image. Two Gaussian Mixture Models separate the image into foreground that is rooftops and background.
+
+## Building Extraction Methods
+### 1) Edge Sharpening
+Due to the poor quality of the image, to mark the rooftop area edge sharpening of the image is to be done. After that skimage morphological opening is done to fill the gaps in between edges.
+### 2) Active Contours
+Using the GitHub repository, Active Contour was applied on the rooftop area to extract the optimal area for the solar panel. Active Contours is divided into two, with edges and without edges. Without edges can’t be used in our case as it works on the region segmentation and due to the poor quality of image region, wise segmentation was not possible.
