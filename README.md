@@ -1,5 +1,5 @@
 # Rooftop-Assessment-for-solar-power-using-Satellite-Imagery
-Extracted the dataset of houses from Satellite images and analysed each house rooftop's solar power potential
+Analysed each house rooftop's solar power potential using Google Satellite Images
 
 AI-based technology to assess your Rooftop Solar potential
 
