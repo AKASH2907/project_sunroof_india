@@ -20,6 +20,9 @@ Segmentation on the images from maps to count the number of buildings and to plo
 * Gaussian Mixture Model is a probabilistic model that assumes all the data points are generated from a mixture of a finite number of the Gaussian distribution.
 * Gabor filter enhances one region relative to other depending on the frequency and theta values. After applying Gabor filter, two Gaussian Mixture models were fit in the histogram of the grayscale image. Two Gaussian Mixture Models separate the image into foreground that is rooftops and background.
 
+![screenshot from 2018-06-12 03-13-14](https://user-images.githubusercontent.com/22872200/41258653-94aeb85e-6dee-11e8-879e-a780f923dc32.png)
+
+
 ## Building Extraction Methods
 ### 1) Edge Sharpening
 Due to the poor quality of the image, to mark the rooftop area edge sharpening of the image is to be done. After that skimage morphological opening is done to fill the gaps in between edges.
