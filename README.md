@@ -28,3 +28,13 @@ Segmentation on the images from maps to count the number of buildings and to plo
 Due to the poor quality of the image, to mark the rooftop area edge sharpening of the image is to be done. After that skimage morphological opening is done to fill the gaps in between edges.
 ### 2) Active Contours
 Using the GitHub repository, Active Contour was applied on the rooftop area to extract the optimal area for the solar panel. Active Contours is divided into two, with edges and without edges. Without edges can’t be used in our case as it works on the region segmentation and due to the poor quality of image region, wise segmentation was not possible.
+
+![screenshot from 2018-06-13 02-01-33](https://user-images.githubusercontent.com/22872200/41315710-f0ce448c-6ead-11e8-8930-cebbc835dd02.png)
+
+## Polygons Approximation
+### 1)Hough Transform: 
+Hough Transform was initially used to analyse the shape of the rooftop. Using K-Means clustering the number of Hough lines were reduced to 4 to 6 to outline the rooftop and obstacle boundaries.
+### 2)Pixel wise Polygon filling: 
+Applying Contour on the rooftop and moving around the contour in a clockwise direction each pixel and its surroundings was marked as rooftop area.
+### 3)Region Based Polygon filling:
+After applying Hough Transform in combination with K-Means clustering, the rooftop area was divided into different regions. Checking the intensity of different patches, the area was marked as a rooftop area or not. 
