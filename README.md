@@ -41,3 +41,7 @@ After applying Hough Transform in combination with K-Means clustering, the rooft
 
 ![screenshot from 2018-06-14 03-03-23](https://user-images.githubusercontent.com/22872200/41379466-a6d9e750-6f7f-11e8-858e-ddf5d3f43849.png)
 
+## Google Maps to Image Pixels
+* The whole region is on top of the pyramid (zoom=0) covered by 256x256 pixels tile,every lower zoom level resolution is always divided by two.
+* At every zoom level, there is Meter per pixel value which gives distance in meters according to the difference in pixel values.
+
