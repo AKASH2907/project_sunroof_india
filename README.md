@@ -37,4 +37,7 @@ Hough Transform was initially used to analyse the shape of the rooftop. Using K-
 ### 2)Pixel wise Polygon filling: 
 Applying Contour on the rooftop and moving around the contour in a clockwise direction each pixel and its surroundings was marked as rooftop area.
 ### 3)Region Based Polygon filling:
-After applying Hough Transform in combination with K-Means clustering, the rooftop area was divided into different regions. Checking the intensity of different patches, the area was marked as a rooftop area or not. 
+After applying Hough Transform in combination with K-Means clustering, the rooftop area was divided into different regions. Checking the intensity of different patches, the area was marked as a rooftop area or not.
+
+![screenshot from 2018-06-14 03-03-23](https://user-images.githubusercontent.com/22872200/41379466-a6d9e750-6f7f-11e8-858e-ddf5d3f43849.png)
+
