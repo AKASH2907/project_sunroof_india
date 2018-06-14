@@ -45,3 +45,5 @@ After applying Hough Transform in combination with K-Means clustering, the rooft
 * The whole region is on top of the pyramid (zoom=0) covered by 256x256 pixels tile,every lower zoom level resolution is always divided by two.
 * At every zoom level, there is Meter per pixel value which gives distance in meters according to the difference in pixel values.
 
+## Optimal Rooftop Area for Solar Panels
+* Corners and Canny: Where corners and Canny results were overlapping those corners were selected. The problems with corners that they can’t be accessed in a localized manner. To draw a polygon out of that was impossible.
