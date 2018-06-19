@@ -47,3 +47,8 @@ After applying Hough Transform in combination with K-Means clustering, the rooft
 
 ## Optimal Rooftop Area for Solar Panels
 * Corners and Canny: Where corners and Canny results were overlapping those corners were selected. The problems with corners that they can’t be accessed in a localized manner. To draw a polygon out of that was impossible.
+
+* Canny and Contours: Contours can be accessed in a clockwise manner. On two images, Canny was applied. One is edge sharpened image and the other is canny edge map image. Contours in Edge sharpened the image using threshold gives rooftop boundaries. Contours on canny edge map using threshold gives obstacle boundaries on the rooftop. Combining both the results and plotting it on a white patch gives the exact rooftop optimal area for solar panel placement.
+
+![solar_panels](https://user-images.githubusercontent.com/22872200/41616111-bdc51256-741a-11e8-83e4-0c8253d6429a.png)
+
