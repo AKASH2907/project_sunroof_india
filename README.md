@@ -1,5 +1,6 @@
 # Rooftop-Assessment-for-solar-power-using-Satellite-Imagery
-Analysed each house rooftop's solar power potential using Google Satellite Images
+Analysis of each house rooftop's solar power potential using Google Satellite Images
+![Project Sunroof:India](https://user-images.githubusercontent.com/22872200/47620059-c3bf0880-db0b-11e8-97fa-a353c0c9585c.png)
 
 AI-based technology to assess your Rooftop Solar potential
 
