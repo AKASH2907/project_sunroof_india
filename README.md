@@ -6,7 +6,7 @@ AI-based technology to assess your Rooftop Solar potential
 
 Individual rooftops of each and every house are identified and segmented out. If you really think that's an easy task, **go have a look at the image quality and resolution of rooftop in Google Maps**. India doesn't even have a 3D map. **Project Sunroof** would be very easy in India if we just have 3D map by Google or any map service provider like MapMyIndia, Open Street maps, etc.In US, the Google Map has a clear view at 22 zoom level whereas in India you can zoom upto only 20/21 zoom level. The image quality at 20 zoom level is so bad that you can't even figure out by yourself where the boundaries of each house lies. Examples of  the dataset is as below on which this algorithms were implemented:
 
-![7](https://user-images.githubusercontent.com/22872200/42192959-a4c93c04-7e89-11e8-897f-21def89940fd.jpg)    ![15](https://user-images.githubusercontent.com/22872200/42192963-a8f08f94-7e89-11e8-991f-23f5d6f9dbca.jpg)   ![4](https://user-images.githubusercontent.com/22872200/42193010-db73837c-7e89-11e8-97d6-902cdc23f892.jpg)  ![1](https://user-images.githubusercontent.com/22872200/42193018-e87a060e-7e89-11e8-9ff3-fee4f20356b8.jpg)
+![Rooftops dataset](https://user-images.githubusercontent.com/22872200/47659682-7ac68d00-dbbb-11e8-8952-65bee36efbc0.jpg)
 
 This repository includes:
 * Aerial Rooftop Detection Methods:
