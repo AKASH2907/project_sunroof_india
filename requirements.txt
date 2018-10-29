@@ -1,0 +1,7 @@
+numpy
+pillow
+cython
+matplotlib
+opencv-python
+scipy
+shapely
