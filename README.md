@@ -24,10 +24,15 @@ This repository includes:
 * Optimal Solar Panel Area on Rooftop
 
 ## Getting Started
-* [Edge Extraction/auto_canny.py](https://github.com/AKASH2907/Solar_power_analysis_of_House_rooftops_using_Satellite_Imagery/blob/master/Edge%20Extraction/auto_canny.py) - Auto-Canny Edge Detection Algorithm on Sharpened Image.
-* [Edge Extraction/Edge Sharpen.py](https://github.com/AKASH2907/Solar_power_analysis_of_House_rooftops_using_Satellite_Imagery/blob/master/Edge%20Extraction/Edge%20Sharpen.py) - Extarction of edges from an image using Auto Canny Edge detection & Histogram Equalization algorithm.
-* [Edge Extraction/Watershed_pyrMeanShift.py](https://github.com/AKASH2907/Solar_power_analysis_of_House_rooftops_using_Satellite_Imagery/blob/master/Edge%20Extraction/Watershed_pyrMeanShift.py) -  Watershed Segmentation to segment out rooftop images.
+* Edge Extraction:
+  * [auto_canny.py](https://github.com/AKASH2907/Solar_power_analysis_of_House_rooftops_using_Satellite_Imagery/blob/master/Edge%20Extraction/auto_canny.py) - Auto-Canny Edge Detection Algorithm on Sharpened Image.
+  * [Edge Sharpen.py](https://github.com/AKASH2907/Solar_power_analysis_of_House_rooftops_using_Satellite_Imagery/blob/master/Edge%20Extraction/Edge%20Sharpen.py) - Extarction of edges from an image using Auto Canny Edge detection & Histogram Equalization algorithm.
+  * [Watershed_pyrMeanShift.py](https://github.com/AKASH2907/Solar_power_analysis_of_House_rooftops_using_Satellite_Imagery/blob/master/Edge%20Extraction/Watershed_pyrMeanShift.py) -  Watershed Segmentation to segment out rooftop images.
 
+* Gabor Filter:
+  [Gabor_test.py](https://github.com/AKASH2907/Solar_power_analysis_of_House_rooftops_using_Satellite_Imagery/blob/master/Gabor%20Filter/Gabor_test.py) - Gabor Filter to separate foreground rooftops from background of an image.
+  
+*
 ## Aerial Rooftop Detection Methods
 ### 1) Hough Transform: 
 It is used to localize shapes of different types of rooftops. When applied to the image, it gives very less true positives. The main problem was to set threshold parameter of Hough Transform. Windowed Hough Transform: Used to detect exact shapes like squares and rectangles. The main limitation of this method was that it won’t work for other structures if not perfectly
