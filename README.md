@@ -1,5 +1,5 @@
 # Rooftop Assessment for solar power potential using Satellite Images
-Analysis of each house rooftop's solar power potential using Google Satellite Images
+Analysis of each house rooftop's solar power potential using Google Satellite Images.
 ![Project Sunroof:India](https://user-images.githubusercontent.com/22872200/47620059-c3bf0880-db0b-11e8-97fa-a353c0c9585c.png)
 
 AI-based technology to assess your Rooftop Solar potential
@@ -34,6 +34,8 @@ This repository includes:
   
 * Polygons Approximation:
   * [poly_fill.py](https://github.com/AKASH2907/Solar_power_analysis_of_House_rooftops_using_Satellite_Imagery/blob/master/Polygon%20Approximation/poly_fill.py) - Approximate the shape of Polygon oh house rooftop
+  * [polygon_fill.py](https://github.com/AKASH2907/Solar_power_analysis_of_House_rooftops_using_Satellite_Imagery/blob/master/Polygon%20Approximation/polygon_fit.py) - Polygon filling pixelwise of rooftop
+  
 ## Aerial Rooftop Detection Methods
 ### 1) Hough Transform: 
 It is used to localize shapes of different types of rooftops. When applied to the image, it gives very less true positives. The main problem was to set threshold parameter of Hough Transform. Windowed Hough Transform: Used to detect exact shapes like squares and rectangles. The main limitation of this method was that it won’t work for other structures if not perfectly
