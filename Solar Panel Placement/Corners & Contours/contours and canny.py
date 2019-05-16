@@ -68,10 +68,6 @@ for fname in images:
             pts = pts.reshape(-1, 1, 2)
             # cv2.polylines(wh, [pts], True, (0, 255, 255))
             cv2.polylines(wh_gray, [pts], True, 0)
-            # print (counter)
-            # epsilon = 0.1 * cv2.arcLength(cnt, True)
-            # approx = cv2.approxPolyDP(cnt, epsilon, True)
-            # cv2.drawContours(wh_gray, approx, -1, 0, 1)
 
     for cnt in cnts:
         counters = 0
@@ -89,13 +85,6 @@ for fname in images:
                     pts.append((x, y))
 
         if counters > 10:
-            # rect = cv2.boundingRect(cnt)
-            # if rect[2] < 100 or rect[3] < 100:
-            #     continue
-            # x, y, w, h = rect
-            # cv2.rectangle(wh_gray, (x, y), (x + w, y + h), 255, 2)
-            # cv2.putText(wh, 'Moth Detected', (x + w + 10, y + h), 0, 0.3, (0, 255, 0))
-            # print (pts)
             pts = np.array(pts)
             pts = pts.reshape(-1, 1, 2)
             # cv2.polylines(wh, [pts], True, (0, 255, 255))
@@ -104,63 +93,15 @@ for fname in images:
     plt.figure()
     plt.title('1')
     plt.imshow(image, cmap='gray')
-    # plt.figure()
-    # plt.title('Grayscale Image')
-    # plt.imshow(im, cmap='gray')
-    # plt.figure()
-    # plt.title('Canny Edge')
-    # plt.imshow(edged, cmap='gray')
-    # plt.figure('Thresh im')
-    # plt.imshow(thresh, cmap='gray')
-    # plt.figure()
-    # plt.plot(o, p, 'b+')
-    # plt.title('Counters edges')
-    # plt.imshow(wh1, cmap='gray')
-    # plt.figure()
-    # plt.plot()
-    # plt.imshow(wh, cmap='gray')
-    # plt.figure()
-    # plt.plot(o, p, 'b+')
-    # plt.imshow(wh2, cmap='gray')
-    # plt.figure()
-    # plt.title('Counters image')
-    # plt.imshow(wh3, cmap='gray')
-    # plt.plot(o, p, 'k+')
-    # res = erosion(wh_gray, selem=disk(6))
-    # res = dilation(res, selem=disk(7))
-    # mnt = cv2.findContours(wh_gray, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)[-2]
-    # print (mnt)
+
     res = closing(cv2.bitwise_not(wh_gray), selem=disk(1))
     wes = closing(cv2.bitwise_not(wh_gray1), selem=disk(1))
-    # lnt = cv2.findContours(res, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)[-2]
-    # wh_gray[np.where((res == 255))] = [0]
-    # wh_gray[np.where((res == 0))] = [255]
-    # wh_gray1[np.where((res == 255))] = [0]
-    # wh_gray1[np.where((res == 0))] = [255]
-    # wh_gray = erosion(wh_gray, selem=disk(2))
 
-    # cv2.drawContours(wh2, lnt, -1, 0, 1)
-    # out = ndimage.distance_transform_edt(~wh_gray)
-    # out = out < 0.1 * out.max()
-    # out = skeletonize(out)
-    # out = morphology.binary_dilation(out, disk(3))
-    # out = segmentation.clear_border(out)
-    # out = out | wh_gray
-    # plt.plot(o, p, 'k+')
-    # plt.imshow(wh_gray, cmap='gray')
-    # result = Image.fromarray(wh_gray)
-    # result.save('erode.png')
-    # plt.figure()
-    # cv2.drawContours(wh2, lnt, -1, 0, 5)
-    # plt.imshow(wh2, cmap='gray')
-    # plt.figure()
-    # plt.imshow(res, cmap='gray')
-    # plt.figure()
-    # plt.imshow(wes, cmap='gray')
     plt.figure()
     plt.imshow(wh_gray, cmap='gray')
     plt.figure()
     plt.imshow(cv2.bitwise_not(wh_gray1), cmap='gray')
+
     dst = cv2.bitwise_and(wh_gray, wh_gray1)
     plt.figure()
     plt.imshow(cv2.bitwise_not(dst), cmap='gray')
