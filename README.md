@@ -24,6 +24,12 @@ This repository includes:
 * Optimal Solar Panel Area on Rooftop
 
 ## Getting Started
+
+* Install the dependencies from requirements.txt file:
+```python
+pip install -r requirements.txt
+```
+
 * Edge Extraction:
   * [auto_canny.py](https://github.com/AKASH2907/Solar_power_analysis_of_House_rooftops_using_Satellite_Imagery/blob/master/Edge%20Extraction/auto_canny.py) - Auto-Canny Edge Detection Algorithm on Sharpened Image.
   * [edge Sharpen.py](https://github.com/AKASH2907/Solar_power_analysis_of_House_rooftops_using_Satellite_Imagery/blob/master/Edge%20Extraction/Edge%20Sharpen.py) - Extarction of edges from an image using Auto Canny Edge detection & Histogram Equalization algorithm.
