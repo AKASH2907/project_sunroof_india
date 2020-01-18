@@ -31,19 +31,19 @@ pip install -r requirements.txt
 ```
 
 * Edge Extraction:
-  * [auto_canny.py](https://github.com/AKASH2907/Solar_power_analysis_of_House_rooftops_using_Satellite_Imagery/blob/master/Edge%20Extraction/auto_canny.py) - Auto-Canny Edge Detection Algorithm on Sharpened Image.
-  * [edge Sharpen.py](https://github.com/AKASH2907/Solar_power_analysis_of_House_rooftops_using_Satellite_Imagery/blob/master/Edge%20Extraction/Edge%20Sharpen.py) - Extarction of edges from an image using Auto Canny Edge detection & Histogram Equalization algorithm.
-  * [watershed_pyrMeanShift.py](https://github.com/AKASH2907/Solar_power_analysis_of_House_rooftops_using_Satellite_Imagery/blob/master/Edge%20Extraction/Watershed_pyrMeanShift.py) -  Watershed Segmentation to segment out rooftop images.
+  * [auto_canny.py](https://github.com/AKASH2907/project_sunroof_india/blob/master/Edge%20Extraction/auto_canny.py) - Auto-Canny Edge Detection Algorithm on Sharpened Image.
+  * [edge Sharpen.py](https://github.com/AKASH2907/project_sunroof_india/blob/master/Edge%20Extraction/edge_sharpen.py) - Extarction of edges from an image using Auto Canny Edge detection & Histogram Equalization algorithm.
+  * [watershed_pyrMeanShift.py](https://github.com/AKASH2907/project_sunroof_india/blob/master/Edge%20Extraction/Watershed_pyrMeanShift.py) -  Watershed Segmentation to segment out rooftop images.
 
 * Gabor Filter:
-  * [gabor_test.py](https://github.com/AKASH2907/Solar_power_analysis_of_House_rooftops_using_Satellite_Imagery/blob/master/Gabor%20Filter/Gabor_test.py) - Gabor Filter to separate foreground rooftops from background of an image.
+  * [gabor_test.py](https://github.com/AKASH2907/project_sunroof_india/blob/master/Gabor%20Filter/Gabor_test.py) - Gabor Filter to separate foreground rooftops from background of an image.
   
 * Active Contours:
   * [active_contours.py](https://github.com/AKASH2907/project_sunroof_india/blob/master/Active%20Contours/plot_active_contours.py) - Apply active contour on bilate sharpened image for improved rooftop area extraction. The sharpening helps to localize edges better in the image.
   
 * Polygons Approximation:
-  * [poly_fill.py](https://github.com/AKASH2907/Solar_power_analysis_of_House_rooftops_using_Satellite_Imagery/blob/master/Polygon%20Approximation/poly_fill.py) - Approximate the shape of Polygon oh house rooftop
-  * [polygon_fill.py](https://github.com/AKASH2907/Solar_power_analysis_of_House_rooftops_using_Satellite_Imagery/blob/master/Polygon%20Approximation/polygon_fit.py) - Polygon filling pixelwise of rooftop
+  * [poly_fill.py](https://github.com/AKASH2907/project_sunroof_india/blob/master/Polygon%20Approximation/poly_fill.py) - Approximate the shape of Polygon oh house rooftop
+  * [polygon_fill.py](https://github.com/AKASH2907/project_sunroof_india/blob/master/Polygon%20Approximation/polygon_fit.py) - Polygon filling pixelwise of rooftop
   
 * Google Maps to Image Pixels:
   * [lat_long_metre_pixel.py](https://github.com/AKASH2907/project_sunroof_india/blob/master/Google%20Map%20to%20Pixels/lat_long_metre_pixel.py) - Convert the number of pixels into square metre area by calculating the ratio of conversion using latitude and longitude of that area.
