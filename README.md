@@ -49,8 +49,8 @@ pip install -r requirements.txt
   * [lat_long_metre_pixel.py](https://github.com/AKASH2907/project_sunroof_india/blob/master/Google%20Map%20to%20Pixels/lat_long_metre_pixel.py) - Convert the number of pixels into square metre area by calculating the ratio of conversion using latitude and longitude of that area.
   
 * Solar Panels Placement:
-  * [canny_corner.py](https://github.com/AKASH2907/project_sunroof_india/blob/master/Solar%20Panel%20Placement/Canny%20and%20Corners%20Approach/plot_building_corner.py) - 1st approach to combine two features i.e. Canny Edge Detection and Harris Corners to localize optimal rooftop area
-  * [canny_contours.py](https://github.com/AKASH2907/project_sunroof_india/blob/master/Solar%20Panel%20Placement/Corners%20%26%20Contours/contours%20and%20canny.py) - 2nd approach to combine two features that are Canny Edge Detection and Contours to localize optimal rooftop area.
+  * [canny_corner.py](https://github.com/AKASH2907/project_sunroof_india/blob/master/Solar%20Panel%20Placement/Canny%20and%20Corners/canny_corners.py) - 1st approach to combine two features i.e. Canny Edge Detection and Harris Corners to localize optimal rooftop area
+  * [canny_contours.py](https://github.com/AKASH2907/project_sunroof_india/blob/master/Solar%20Panel%20Placement/Corners%20%26%20Contours/canny_contours.py) - 2nd approach to combine two features that are Canny Edge Detection and Contours to localize optimal rooftop area.
   * [panels_atlast.py](https://github.com/AKASH2907/project_sunroof_india/blob/master/Solar%20Panel%20Placement/panels_atlast.py) - Final, Solar Panel placement in Optimal Rooftop Area. You can test with the test images provided.
   
 ## Aerial Rooftop Detection Methods
