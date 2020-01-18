@@ -1,7 +1,7 @@
 # Rooftop Assessment for solar power potential using Satellite Images
 Analysis of each house rooftop's solar power potential using Google Satellite Images.
 ![Project Sunroof:India](https://user-images.githubusercontent.com/22872200/47620059-c3bf0880-db0b-11e8-97fa-a353c0c9585c.png)
-
+(This is a screenshot from Google sunroof project)
 AI-based technology to assess your Rooftop Solar potential
 
 Individual rooftops of each and every house are identified and segmented out. If you really think that's an easy task, **go have a look at the image quality and resolution of rooftop in Google Maps**. India doesn't even have a 3D map. **Project Sunroof** would be very easy in India if we just have 3D map by Google or any map service provider like MapMyIndia, Open Street maps, etc.In US, the Google Map has a clear view at 22 zoom level whereas in India you can zoom upto only 20/21 zoom level. The image quality at 20 zoom level is so bad that you can't even figure out by yourself where the boundaries of each house lies. Examples of  the dataset is as below on which this algorithms were implemented:
